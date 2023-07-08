@@ -1,0 +1,252 @@
+
+*{
+    font-size: 16px;
+}
+/* Login screen container */
+.container{
+    display:flex;
+    flex-direction: row;
+    gap: 0;
+    border: 0;
+    background: #e1e0eacc;
+    width: 100vw;   
+    height: 100vh;
+    
+    background: url("/src/assets/image/plant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.log-form-container{
+
+    height: 70vh;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.logoIcon{
+    display: block;
+    height: 90px;
+    width: 80px;
+    margin-bottom: 0;
+    margin-top: 4vh;
+    background: url("/src/assets/image/agrimax.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* welcome text */
+.bold-text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 16px 0 0 0;
+    line-break: normal;
+}
+.fade-text{
+    font-size: 16.8px;
+    font-family: 200;
+    color: #777777;
+    margin: 4px 0 16px 0;
+}
+.fade-text Link{
+    font-size: 16px;
+    font-weight: 650;
+    color: rgb(14, 205, 112);
+    cursor: pointer;
+}
+.log-form{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 0;
+    border-top-right-radius: 6%;
+    border-bottom-right-radius: 6%;   
+    background-color: rgb(243, 247, 251);
+
+    max-height: 100vh;
+    overflow: scroll;
+
+}
+  
+  
+.log-method{
+    display: flex;
+    flex-direction: column;
+    width:24vw;
+    gap: 4px;
+}
+.log-method button{
+    padding: 4px;
+    border: 1.2px solid rgb(218, 215, 215);
+    border-radius: 12px;
+    background-color: rgba(250, 251, 253, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 32px;
+    box-shadow: 1px 1px 4px 0 rgba(162, 160, 160, 0.417);
+    cursor: pointer;
+}
+         
+
+
+/* 
+    login form: Email and password fields
+*/
+.log-detail{
+    position: relative;
+    margin-top: 24px;
+    /* height: 24vh; */
+    height: auto;
+    display: block;
+}
+
+.log-detail label, label{
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-left: 2px;
+}
+
+.log-detail input{
+    width: 24vw;
+    border: 1px solid rgb(180, 181, 187);
+    border-radius: 12px;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    text-indent: 12px;
+}
+input:focus,input:active{
+    border: 0;
+    border-bottom:1px solid rgb(139, 253, 213);
+    background-color: rgb(241, 241, 249);
+    outline: none;
+}
+
+input::placeholder{
+    color:#aeaebff9;
+    font-size: 14px;
+}
+.email-inp{
+    margin-bottom:24px;
+}
+
+/* 
+    Extra options for log in {Forgot Password}
+*/
+
+.checkbox-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    top:4px;
+    width: 24vw;  
+    justify-content: space-between;
+    margin-top: 16px;
+}
+  
+  .check-btn {
+    margin-right: 5px;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #1f1b1b;
+  }
+
+  .check-btn:checked{
+    /* background-color: rgba(59, 140, 238, 0.908); */
+    background-color: rgba(15, 212, 127, 0.908);
+    border: 3px solid rgba(209, 207, 211, 0.75);
+    box-shadow: 0px 0px 8px 0px rgba(178, 181, 196, 0.916);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  input[type="submit"]{
+    background-image: linear-gradient(to right,  #1cbd44f3  48%,rgb(64, 244, 5));
+    color: rgb(253, 253, 253);
+    width: 24vw;
+    padding: 10px 0 10px 0;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+  input[type="submit"]:hover{
+    background-image: linear-gradient(to right,  #07a01ec4  48%,rgba(52, 194, 4, 0.724));
+
+  }
+
+  a{
+    text-decoration: none;
+    color: #090909;
+    font-weight: 600;
+  }
+
+  /* 
+    -----or----    
+*/
+.or-section{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    position: relative;
+    margin-top: 32px;
+    /* margin-bottom: 10px; */
+}
+
+.hr-line{
+    position: relative;
+    width: 16vw;
+    height: 5px;
+    top:12px;
+    border: 0;;
+    border-top:2px solid rgba(85, 84, 84, 0.664);
+}
+
+
+/* Icons in log in method */
+.google-icon{
+    height: 28px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.log-method button:hover{
+    border: 0.2PX solid rgb(11, 7, 88);
+    border: 0;
+    border-bottom:1px solid rgb(139, 253, 213);
+  background-color: #f2f2f7fc;
+}
+
+
+  .bg-vid{
+    height: 100%;
+    width:50vw ;
+    background: url("/src/assets/image/plant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .google-btn{
+    color: #777777;
+  }

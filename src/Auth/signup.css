@@ -1,0 +1,35 @@
+.log-form-container{
+
+    height: 70vh;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+
+/* 
+    Scroll bar styling
+*/
+
+.log-form-container::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    position: relative;
+    right:  32px;
+  }
+  
+  .log-form-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Transparent background behind the scrollbar */
+  }
+  
+  .log-form-container::-webkit-scrollbar-thumb {
+    background-color: rgb(198, 219, 222); /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners of the scrollbar thumb */
+    z-index: 11;
+  }
+  
+  .log-form-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(204, 228, 216, 0.898); /* Color of the scrollbar thumb on hover */
+  }
+ 
+  
+  
+  
